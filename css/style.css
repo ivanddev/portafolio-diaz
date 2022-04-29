@@ -35,10 +35,12 @@ ul {
 .header {
     grid-area: header;
 }
-.nav__modifier{
+
+.nav__modifier {
     padding-top: 0;
     padding-bottom: 0;
 }
+
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
@@ -65,6 +67,7 @@ ul {
 .nav-button__div:focus {
     box-shadow: 0 0 0 0;
 }
+
 ul.navbar-nav {
     font-family: monospace;
 }
@@ -538,40 +541,71 @@ ul {
     align-items: center;
     text-align: left;
     justify-content: center;
-    color: #C5C5C5;
+    height: 100%;
+    width: 100%
 }
 
 .contact-form__div {
-    height: 80%;
-    width: 30vw;
+    height: 500px;
+    width: 300px;
+    padding: 30px 30px 0 30px;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        "contact-form__logo"
+        "form";
+    color: #C5C5C5;
     background-color: #212433;
-    box-shadow: 0px 0 10px #000;
 }
 
 .contact-form__logo {
-    height: 10vh;
-    width: 100%;
+    grid-area: contact-form__logo;
     display: flex;
     justify-content: center;
-    margin: 30px 0;
+    height: 100%;
 }
 
-.form__flex {
+.contact-form__logo__img {
+    height: 80%;
+}
+
+.form {
+    grid-area: form;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "fn ls"
+        "em em"
+        "com com"
+        "but but";
+    column-gap: 10px;
+}
+
+.fn {
+    grid-area: fn;
+}
+
+.ls {
+    grid-area: ls;
+}
+
+.em {
+    grid-area: em;
+}
+
+.com {
+    grid-area: com;
+}
+
+.but {
+    grid-area: but;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form__elements {
-    margin: 1.5vh 10%;
-    width: 80%;
-}
-
-.form__input {
-    width: 100%;
-    height: 3vh;
-    background-color: #C5C5C5;
-    border: none;
-}
-
+.form__input,
 .form__textarea {
     width: 100%;
     background-color: #C5C5C5;
@@ -579,8 +613,7 @@ ul {
 }
 
 .btn--form {
-    width: 100%;
-    margin: 5vh 0;
+    height: 55px;
 }
 
 
@@ -589,6 +622,42 @@ ul {
 /*----------- RESPONSIVE @media query ----------- */
 /*----------- RESPONSIVE @media query ----------- */
 /*----------- RESPONSIVE @media query ----------- */
+/* form */
+@media (min-width: 220px) {
+    .contact-form__div {
+        width: 200px;
+        height: 400px;
+        padding: 20px 20px 0 20px;
+        font-size: 12px;
+    }
+
+    .btn--form {
+        height: 40px;
+    }
+
+}
+@media (min-width: 300px) {
+    .btn {
+        font-size: 20px;
+    }
+
+    .btn--form {
+        height: 50px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .contact-form__div {
+        width: 500px;
+        height: 600px;
+        padding: 50px 50px 0 50px;
+    }
+    .btn--form {
+        width: 100%;
+    }
+}
 
 /* MOBILE S-MINI */
 @media (max-width:299px) {
@@ -745,15 +814,6 @@ ul {
         height: 70%;
     }
 
-    .contact-form__div {
-        width: 200px;
-        height: 600px
-    }
-
-    .form__input {
-        height: 20px;
-    }
-
 }
 
 /* MOBILE MINI */
@@ -781,10 +841,6 @@ ul {
 
     .main-index__title2 {
         font-size: 1.5rem;
-    }
-
-    .btn {
-        font-size: 20px;
     }
 
     /* ABOUT ME */
@@ -909,12 +965,6 @@ ul {
     .contact-img {
         height: 70%;
     }
-
-    .contact-form__div {
-        width: 200px;
-        height: 600px
-    }
-
 
 }
 
@@ -1073,24 +1123,15 @@ ul {
     .contact-container__article {
         height: 10vh;
     }
-
     .contact-form__div {
-        height: 70%;
-        width: 70%;
+        width: 300px;
+        height: 400px;
+        padding: 40px 40px 20px 40px;
     }
-
-    .contact-form__logo {
-        height: 10%;
-    }
-
-    .form__input {
-        height: 2vh;
-    }
-
     .btn--form {
-        width: 70%;
-        margin: 5vh 15%;
+        width: 100%;
     }
+
 }
 
 
@@ -1170,9 +1211,6 @@ ul {
     }
 
     /*----------- CONTACT ----------- */
-    .contact-form__div {
-        width: 450px;
-    }
 
     .contact-container__article {
         height: 120px;
@@ -1198,6 +1236,24 @@ ul {
 
     .contact-container__cards-titles {
         padding: 0 10px;
+    }
+    .contact-form__div {
+        width: 400px;
+        height: 500px;
+        padding: 40px 40px 0 40px;
+    }
+    .btn--form {
+        width: 100%;
+    }
+}
+@media (min-width:961px){
+    .contact-form__div {
+        width: 400px;
+        height: 500px;
+        padding: 40px 40px 0 40px;
+    }
+    .btn--form {
+        width: 100%;
     }
 }
 
