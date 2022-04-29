@@ -35,7 +35,43 @@ ul {
 .header {
     grid-area: header;
 }
+.nav__modifier{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
+.nav__img {
+    height: 40px;
+}
+
+.nav-background {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-button__div {
+    border-radius: 0;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.nav-button__div:focus {
+    box-shadow: 0 0 0 0;
+}
+ul.navbar-nav {
+    font-family: monospace;
+}
+
+
+
+/* NAV SIN BOOTSTRAP
 .nav {
     width: 100%;
     height: 100%;
@@ -70,7 +106,7 @@ ul {
 
 .nav__a:hover {
     color: #fff
-}
+} */
 
 /*----------- INDEX ----------- */
 
@@ -104,6 +140,8 @@ ul {
     font-size: 23rem;
     height: 23rem;
     font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 .main-index__title2 {
@@ -113,7 +151,7 @@ ul {
 }
 
 .main-index__btn {
-    margin-top: 15vh;
+    margin-top: 11vh;
 }
 
 .btn {
@@ -144,10 +182,12 @@ ul {
     align-items: center;
     width: 100%;
     background: linear-gradient(to right, #b6b6b6, #f2f2f2, #dbdbdb, #eaeaea);
+    line-height: 1;
 }
 
 .footer__div {
     width: 500px;
+    height: 100%;
     text-align: center;
 }
 
@@ -262,7 +302,7 @@ ul {
 .body-portfolio {
     background-color: #161622;
     display: grid;
-    grid-template-rows: 5vh auto 20vh;
+    grid-template-rows: auto auto 15vh;
     grid-template-areas:
         "header"
         "portfolio"
@@ -302,19 +342,26 @@ ul {
     justify-items: center;
     gap: 2vh 0;
 }
-.carousel{
-    width: 100%;;
+
+.carousel {
+    width: 100%;
+    ;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 a {
     color: #C5C5C5;
     text-decoration: none;
 }
-ol, ul {
+
+ol,
+ul {
     padding-left: 0;
 }
 
@@ -342,12 +389,14 @@ ol, ul {
     width: 100%;
     height: 100%;
 }
+
 /* HOVER */
-.imghover{
+.imghover {
     transform: scale(1);
     transition: transform .3s;
 }
-.imghover:hover{
+
+.imghover:hover {
     transform: scale(1.2);
     transition: transform .3s;
 }
@@ -516,8 +565,9 @@ ol, ul {
     height: 100%;
     filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
 }
+
 /* HOVER */
-.imghover2:hover{
+.imghover2:hover {
     filter: invert(90%);
 }
 
@@ -743,6 +793,7 @@ ol, ul {
         width: 200px;
         height: 600px
     }
+
     .form__input {
         height: 20px;
     }
@@ -1063,6 +1114,7 @@ ol, ul {
             "card1 card2"
             "card3 card4";
     }
+
     .cards {
         height: 70%;
         width: 70%;
