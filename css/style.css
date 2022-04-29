@@ -72,7 +72,6 @@ ul {
     color: #fff
 }
 
-
 /*----------- INDEX ----------- */
 
 .body-index {
@@ -263,7 +262,7 @@ ul {
 .body-portfolio {
     background-color: #161622;
     display: grid;
-    grid-template-rows: 5vh auto 15vh;
+    grid-template-rows: 5vh auto 20vh;
     grid-template-areas:
         "header"
         "portfolio"
