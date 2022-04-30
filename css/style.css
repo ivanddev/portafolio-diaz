@@ -692,6 +692,7 @@ ul {
 
     /* ABOUT ME */
     .body-aboutme {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 30vh 65vh 15vh;
         grid-template-areas:
@@ -745,8 +746,9 @@ ul {
 
     /*----------- CLIENT ----------- */
     .body-client {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 40vh 55vh 15vh;
+        grid-template-rows: auto auto 55vh 15vh;
         grid-template-areas:
             "header"
             "clienttitle"
@@ -777,7 +779,7 @@ ul {
 
     .client-container__paragraph__p {
         grid-area: paragraph;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -845,6 +847,7 @@ ul {
 
     /* ABOUT ME */
     .body-aboutme {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 30vh 65vh 15vh;
         grid-template-areas:
@@ -898,8 +901,9 @@ ul {
 
     /*----------- CLIENT ----------- */
     .body-client {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 40vh 55vh 15vh;
+        grid-template-rows: auto auto 55vh 15vh;
         grid-template-areas:
             "header"
             "clienttitle"
@@ -930,7 +934,7 @@ ul {
 
     .client-container__paragraph__p {
         grid-area: paragraph;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -1005,6 +1009,7 @@ ul {
     /*----------- ABOUT ME ----------- */
 
     .body-aboutme {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 30vh 65vh 15vh;
         grid-template-areas:
@@ -1060,8 +1065,9 @@ ul {
     /*----------- CLIENT ----------- */
 
     .body-client {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 40vh 55vh 15vh;
+        grid-template-rows: auto auto 55vh 15vh;
         grid-template-areas:
             "header"
             "clienttitle"
@@ -1092,7 +1098,7 @@ ul {
 
     .client-container__paragraph__p {
         grid-area: paragraph;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -1155,6 +1161,7 @@ ul {
     }
 
     .body-aboutme {
+        display: grid;
         grid-template-rows: auto 95vh 15vh;
     }
 
