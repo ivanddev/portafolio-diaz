@@ -141,9 +141,6 @@ ul.navbar-nav {
 
 .footer {
     grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     background: linear-gradient(to right, #b6b6b6, #f2f2f2, #dbdbdb, #eaeaea);
     line-height: 1;
@@ -152,12 +149,9 @@ ul.navbar-nav {
 .footer__div {
     width: 500px;
     height: 90%;
-    text-align: center;
 }
 
 .footer__div__container {
-    display: flex;
-    justify-content: space-around;
     margin: 0 60px;
 }
 
@@ -172,8 +166,6 @@ ul.navbar-nav {
 }
 
 .footer__div__links {
-    display: flex;
-    justify-content: space-around;
     margin: 5% 20px;
 }
 
@@ -188,7 +180,6 @@ ul.navbar-nav {
 }
 
 .footer__div__p {
-    font-family: monospace;
     color: #000;
     font-size: 12px;
     letter-spacing: 2px;
@@ -210,22 +201,16 @@ ul.navbar-nav {
 
 .aboutme__avatar {
     grid-area: aboutmeavatar;
-    /* background: linear-gradient(to right, #614385, #516395); */
     background: #212433;
 }
 
 .aboutme__text {
     grid-area: aboutmetxt;
-    display: flex;
-    align-items: center;
     margin: 0 auto;
 }
 
 .aboutme__container__avatar {
     height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
 }
 
 .aboutme__container__avatar__img {
@@ -239,13 +224,11 @@ ul.navbar-nav {
 }
 
 .aboutme__container__text {
-    /* background: linear-gradient(to left, #614385, #516395); */
     background: #212433;
     box-shadow: 15px 0 10px #000;
 }
 
 .aboutme__container__text__h2 {
-    text-align: center;
     margin: 20px 0;
     font-family: 'Bebas Neue', cursive;
     color: #C5C5C5;
@@ -258,7 +241,6 @@ ul.navbar-nav {
     margin: 0 auto 5% auto;
     font-family: 'M PLUS 1 Code', sans-serif;
     color: #C5C5C5;
-    font-size: 1.5rem;
 }
 
 /*----------- PORTFOLIO ----------- */
@@ -278,7 +260,6 @@ ul.navbar-nav {
     width: 70%;
     margin: 0 auto;
     grid-area: portfolio;
-    display: grid;
     justify-items: center;
 }
 
@@ -289,9 +270,7 @@ ul.navbar-nav {
 }
 
 .img-containers-titles {
-    font-size: 3rem;
     width: 50%;
-    text-align: center;
     background-color: #C5C5C5;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
@@ -382,19 +361,12 @@ ul {
 .client-container__titles {
     grid-area: clienttitle;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-shadow: 5px 5px #000;
-    /* background: linear-gradient(to right, #614385, #516395); */
     background: #212433;
 }
 
 .client-container__title {
-    display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: center;
     color: #C5C5C5;
 }
 
@@ -411,12 +383,10 @@ ul {
 
 .client-container__text {
     grid-area: clientp;
-    display: flex;
-    align-items: center;
 }
 
 .client-container__img {
-    height: 20%;
+    height: 20px;
     margin-left: 4%;
     border-radius: 50%;
     box-shadow: 0px 0px 5px #000;
@@ -425,21 +395,19 @@ ul {
 
 .client-container__paragraph {
     height: 30%;
-    /* background: linear-gradient(to left, #614385, #516395); */
     background: #212433;
-    display: flex;
-    align-items: center;
     box-shadow: 15px 0 10px #000;
 }
 
 .client-container__paragraph__p {
     width: 80%;
     margin: 0 auto;
-    font-size: 1.5rem;
     color: #C5C5C5;
     font-family: 'M PLUS 1 Code', sans-serif;
 }
-
+.h7{
+    font-size: calc(0.6rem + .6vw);
+}
 
 /*----------- CONTACT ----------- */
 
@@ -717,7 +685,6 @@ ul {
 
     .aboutme__container__text__p {
         text-align: center;
-        font-size: 1rem;
     }
 
     /* PORTFOLIO */
@@ -731,7 +698,6 @@ ul {
     }
 
     .portfolio-coverscontainer-title {
-        font-size: 1.5rem;
         margin: 10% 0 10% 0;
     }
 
@@ -740,9 +706,6 @@ ul {
         grid-template-rows: 10vh repeat(5, 7vh);
     }
 
-    .portfolio-bannerscontainer-title {
-        font-size: 1.5rem;
-    }
 
     /*----------- CLIENT ----------- */
     .body-client {
@@ -770,16 +733,8 @@ ul {
         height: 70%;
     }
 
-    .client-container__img {
-        grid-area: img;
-        height: 100%;
-        margin: auto auto;
-
-    }
-
     .client-container__paragraph__p {
         grid-area: paragraph;
-        font-size: 0.7rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -872,7 +827,6 @@ ul {
 
     .aboutme__container__text__p {
         text-align: center;
-        font-size: 1rem;
     }
 
     /* PORTFOLIO */
@@ -886,7 +840,6 @@ ul {
     }
 
     .portfolio-coverscontainer-title {
-        font-size: 1.5rem;
         margin: 10% 0 10% 0;
     }
 
@@ -895,9 +848,6 @@ ul {
         grid-template-rows: 10vh repeat(5, 7vh);
     }
 
-    .portfolio-bannerscontainer-title {
-        font-size: 1.5rem;
-    }
 
     /*----------- CLIENT ----------- */
     .body-client {
@@ -925,16 +875,8 @@ ul {
         height: 70%;
     }
 
-    .client-container__img {
-        grid-area: img;
-        height: 100%;
-        margin: auto auto;
-
-    }
-
     .client-container__paragraph__p {
         grid-area: paragraph;
-        font-size: 0.75rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -1034,7 +976,6 @@ ul {
 
     .aboutme__container__text__p {
         text-align: center;
-        font-size: 1.3rem;
     }
 
     /*----------- PORTFOLIO ----------- */
@@ -1049,8 +990,7 @@ ul {
     }
 
     .portfolio-coverscontainer-title {
-        font-size: 1.5rem;
-        margin: 10% 0 10% 0;
+        margin: 7% 0 7% 0;
     }
 
     .portfolio-bannerscontainer {
@@ -1058,9 +998,6 @@ ul {
         grid-template-rows: 10vh repeat(5, 7vh);
     }
 
-    .portfolio-bannerscontainer-title {
-        font-size: 1.5rem;
-    }
 
     /*----------- CLIENT ----------- */
 
@@ -1089,16 +1026,8 @@ ul {
         height: 70%;
     }
 
-    .client-container__img {
-        grid-area: img;
-        height: 100%;
-        margin: auto auto;
-
-    }
-
     .client-container__paragraph__p {
         grid-area: paragraph;
-        font-size: 0.9rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -1171,7 +1100,6 @@ ul {
     }
 
     .aboutme__container__text__p {
-        font-size: 1rem;
     }
 
     .aboutme__container__avatar__img {
@@ -1189,8 +1117,7 @@ ul {
     }
 
     .portfolio-coverscontainer-title {
-        font-size: 1.5rem;
-        margin: 10% 0 10% 0;
+        margin: 6% 0 6% 0;
     }
 
     .portfolio-bannerscontainer {
@@ -1198,9 +1125,6 @@ ul {
         grid-template-rows: 10vh repeat(5, 7vh);
     }
 
-    .portfolio-bannerscontainer-title {
-        font-size: 1.5rem;
-    }
 
     /* CLIENT */
     .client-container__h1 {
@@ -1214,7 +1138,6 @@ ul {
     .client-container__paragraph__p {
         width: 80%;
         margin: 0 auto;
-        font-size: 1rem;
     }
 
     /*----------- CONTACT ----------- */
@@ -1261,6 +1184,9 @@ ul {
     }
     .btn--form {
         width: 100%;
+    }
+    .client-container__img {
+        height: 40px;
     }
 }
 
