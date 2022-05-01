@@ -153,6 +153,8 @@ ul.navbar-nav {
 
 .footer__div__container {
     margin: 0 60px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer__div__logos__img {
@@ -166,6 +168,8 @@ ul.navbar-nav {
 }
 
 .footer__div__links {
+    display: flex;
+    justify-content: space-around;
     margin: 5% 20px;
 }
 
@@ -405,7 +409,8 @@ ul {
     color: #C5C5C5;
     font-family: 'M PLUS 1 Code', sans-serif;
 }
-.h7{
+
+.h7 {
     font-size: calc(0.6rem + .6vw);
 }
 
@@ -604,6 +609,7 @@ ul {
     }
 
 }
+
 @media (min-width: 300px) {
     .btn {
         font-size: 20px;
@@ -622,6 +628,7 @@ ul {
         height: 600px;
         padding: 50px 50px 0 50px;
     }
+
     .btn--form {
         width: 100%;
     }
@@ -652,6 +659,8 @@ ul {
 
     .main-index__title2 {
         font-size: 1.3rem;
+        text-align: left;
+        letter-spacing: normal;
     }
 
     .btn {
@@ -798,6 +807,8 @@ ul {
 
     .main-index__title2 {
         font-size: 1.5rem;
+        text-align: left;
+        letter-spacing: normal;
     }
 
     /* ABOUT ME */
@@ -1058,11 +1069,13 @@ ul {
     .contact-container__article {
         height: 10vh;
     }
+
     .contact-form__div {
         width: 300px;
         height: 400px;
         padding: 40px 40px 20px 40px;
     }
+
     .btn--form {
         width: 100%;
     }
@@ -1099,8 +1112,7 @@ ul {
         font-size: 2.5rem;
     }
 
-    .aboutme__container__text__p {
-    }
+    .aboutme__container__text__p {}
 
     .aboutme__container__avatar__img {
         height: 30%;
@@ -1167,28 +1179,32 @@ ul {
     .contact-container__cards-titles {
         padding: 0 10px;
     }
+
     .contact-form__div {
         width: 400px;
         height: 500px;
         padding: 40px 40px 0 40px;
     }
+
     .btn--form {
         width: 100%;
     }
 }
-@media (min-width:961px){
+
+@media (min-width:961px) {
     .contact-form__div {
         width: 400px;
         height: 500px;
         padding: 40px 40px 0 40px;
     }
+
     .btn--form {
         width: 100%;
     }
+
     .client-container__img {
         height: 40px;
     }
 }
-
 /*----------- DESKTOP-----------
 ----------- READY ----------- */
