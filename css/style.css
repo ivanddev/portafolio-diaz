@@ -178,7 +178,6 @@ ul.navbar-nav {
 
 .footer__div__p {
     color: #000;
-    font-size: 12px;
     letter-spacing: 2px;
 }
 
@@ -402,6 +401,9 @@ ul {
 
 .h7 {
     font-size: calc(0.6rem + .6vw);
+}
+.h8 {
+    font-size: calc(0.4rem + 0.5vw);
 }
 
 /*----------- CONTACT ----------- */
