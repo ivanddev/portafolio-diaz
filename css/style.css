@@ -17,7 +17,6 @@
 }
 
 /*----------- PALETTES ----------- */
-
 :root {
     --New-Swatch: #000000;
     --New-Swatch: #161622;
@@ -27,7 +26,6 @@
 }
 
 /*----------- HEADER ----------- */
-
 ul {
     list-style-type: none;
 }
@@ -73,7 +71,6 @@ ul.navbar-nav {
 }
 
 /*----------- INDEX ----------- */
-
 .body-index {
     display: grid;
     grid-template-rows: auto 100vh 15vh;
@@ -85,15 +82,12 @@ ul.navbar-nav {
     background-attachment: fixed;
 }
 
-
 .main-index {
     grid-area: main;
     display: flex;
     text-align: center;
     justify-content: center;
 }
-
-
 
 .main-index__items {
     color: #C5C5C5;
@@ -138,7 +132,6 @@ ul.navbar-nav {
 
 
 /*----------- FOOTER ----------- */
-
 .footer {
     grid-area: footer;
     width: 100%;
@@ -191,7 +184,6 @@ ul.navbar-nav {
 
 
 /*----------- ABOUT ME ----------- */
-
 .body-aboutme {
     background-color: #161622;
     display: grid;
@@ -248,7 +240,6 @@ ul.navbar-nav {
 }
 
 /*----------- PORTFOLIO ----------- */
-
 .body-portfolio {
     background-color: #161622;
     display: grid;
@@ -350,7 +341,6 @@ ul {
 
 
 /*----------- CLIENT ----------- */
-
 .body-client {
     background-color: #161622;
     display: grid;
@@ -415,7 +405,6 @@ ul {
 }
 
 /*----------- CONTACT ----------- */
-
 .body-contact {
     background-color: #161622;
     display: grid;
@@ -442,7 +431,6 @@ ul {
     letter-spacing: 5px;
     font-size: 100px;
     text-shadow: 5px 5px #000;
-    /* background: linear-gradient(to right, #614385, #516395); */
     background: #212433;
 }
 
@@ -595,46 +583,9 @@ ul {
 /*----------- RESPONSIVE @media query ----------- */
 /*----------- RESPONSIVE @media query ----------- */
 /*----------- RESPONSIVE @media query ----------- */
-/* form */
-@media (min-width: 220px) {
-    .contact-form__div {
-        width: 200px;
-        height: 400px;
-        padding: 20px 20px 0 20px;
-        font-size: 12px;
-    }
 
-    .btn--form {
-        height: 40px;
-    }
 
-}
-
-@media (min-width: 300px) {
-    .btn {
-        font-size: 20px;
-    }
-
-    .btn--form {
-        height: 50px;
-        width: 100%;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .contact-form__div {
-        width: 500px;
-        height: 600px;
-        padding: 50px 50px 0 50px;
-    }
-
-    .btn--form {
-        width: 100%;
-    }
-}
-
-/* MOBILE S-MINI */
+/* MOBILE S */
 @media (max-width:299px) {
 
 
@@ -747,7 +698,6 @@ ul {
     }
 
     /*----------- CONTACT ----------- */
-
     .contact-title {
         height: 200px;
         font-size: 2rem;
@@ -782,8 +732,11 @@ ul {
 
 }
 
-/* MOBILE MINI */
-@media (min-width:300px) and (max-width:350px) {
+
+
+
+/* MOBILE NORMAL */
+@media (min-width:300px) and (max-width:499px) {
 
 
     /* FOOTER */
@@ -925,162 +878,7 @@ ul {
 
 }
 
-/*----------- MOBILE ----------- */
-@media (min-width:351px) and (max-width:499px) {
 
-
-    /*----------- FOOTER ----------- */
-    .footer__div {
-        width: 300px;
-    }
-
-    .footer__div__container {
-        margin: 5%;
-    }
-
-    .footer__div__links {
-        display: none;
-    }
-
-    /*----------- INDEX ----------- */
-
-    .main-index__items {
-        margin-top: 22vh;
-    }
-
-    .main-index__title1 {
-        font-size: 12rem;
-        height: 12rem;
-    }
-
-    .main-index__title2 {
-        text-align: left;
-        font-size: 2rem;
-        letter-spacing: normal;
-    }
-
-    /*----------- ABOUT ME ----------- */
-
-    .body-aboutme {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 30vh 65vh 15vh;
-        grid-template-areas:
-            "header"
-            "aboutmeavatar"
-            "aboutmetxt"
-            "footer";
-    }
-
-    .aboutme__container__avatar {
-        border: none;
-    }
-
-    .aboutme__container__avatar__img {
-        margin: auto auto;
-        height: 70%;
-    }
-
-    .aboutme__container__text__h2 {
-        font-size: 3rem;
-    }
-
-    .aboutme__container__text__p {
-        text-align: center;
-    }
-
-    /*----------- PORTFOLIO ----------- */
-
-    .main-portfolio {
-        width: 100%;
-    }
-
-    .portfolio-coverscontainer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio-coverscontainer-title {
-        margin: 7% 0 7% 0;
-    }
-
-    .portfolio-bannerscontainer {
-        width: 90%;
-        grid-template-rows: 10vh repeat(5, 7vh);
-    }
-
-
-    /*----------- CLIENT ----------- */
-
-    .body-client {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 55vh 15vh;
-        grid-template-areas:
-            "header"
-            "clienttitle"
-            "clientp"
-            "footer";
-    }
-
-    .client-container__h1 {
-        font-size: 4rem;
-    }
-
-    .client-container__paragraph {
-        display: grid;
-        align-items: center;
-        grid-template-rows: 30vh 5vh;
-        grid-template-areas:
-            "paragraph"
-            "img";
-        height: 70%;
-    }
-
-    .client-container__paragraph__p {
-        grid-area: paragraph;
-    }
-
-    /*----------- CONTACT ----------- */
-
-    .contact-title {
-        height: 200px;
-        font-size: 2rem;
-    }
-
-    .contact-container {
-        width: 90%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px;
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4";
-    }
-
-    .cards {
-        height: 70%;
-        width: 70%;
-    }
-
-    .contact-container__cards-titles {
-        padding: 0 10px;
-    }
-
-    .contact-container__article {
-        height: 10vh;
-    }
-
-    .contact-form__div {
-        width: 300px;
-        height: 400px;
-        padding: 40px 40px 20px 40px;
-    }
-
-    .btn--form {
-        width: 100%;
-    }
-
-}
 
 
 /*----------- TABLET ----------- */
@@ -1111,8 +909,6 @@ ul {
     .aboutme__container__text__h2 {
         font-size: 2.5rem;
     }
-
-    .aboutme__container__text__p {}
 
     .aboutme__container__avatar__img {
         height: 30%;
@@ -1206,5 +1002,68 @@ ul {
         height: 40px;
     }
 }
-/*----------- DESKTOP-----------
------------ READY ----------- */
+
+
+/* FORM */
+@media (min-width: 220px) {
+    .contact-form__div {
+        width: 200px;
+        height: 400px;
+        padding: 20px 20px 0 20px;
+        font-size: 12px;
+    }
+
+    .btn--form {
+        height: 40px;
+    }
+
+}
+
+@media (min-width: 300px) {
+    .btn {
+        font-size: 20px;
+    }
+
+    .btn--form {
+        height: 50px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .contact-form__div {
+        width: 500px;
+        height: 600px;
+        padding: 50px 50px 0 50px;
+    }
+
+    .btn--form {
+        width: 100%;
+    }
+}
+
+
+
+/* LANDSCAPE */
+@media screen and (orientation:landscape) and (max-width: 920px){
+    .body-index {
+        grid-template-rows: auto 600px 150px;
+    }
+    .body-aboutme {
+        display: grid;
+        grid-template-rows: auto 600px 150px;
+    }
+    .body-portfolio {
+        grid-template-rows: auto 1200px 150px;
+    }
+    .portfolio-bannerscontainer {
+        grid-template-rows: 110px repeat(5, 100px);
+    }
+    .body-client {
+        grid-template-rows: auto 350px 150px;
+    }
+    .body-contact {
+        grid-template-rows: auto 800px 600px 150px;
+    }
+}
