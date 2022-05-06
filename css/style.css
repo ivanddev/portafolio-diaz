@@ -11,5 +11,193 @@
   font-family: "M PLUS 1 Code";
   src: url(../src/fonts/MPLUS1Code-VariableFont_wght.ttf);
 }
+.header {
+  grid-area: header;
+}
+.header .nav-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header .nav-modifier {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header .nav-modifier div .navbar-brand {
+  padding: 0;
+  padding-bottom: 0;
+}
+.header .nav-modifier div .navbar-brand .nav__img {
+  height: 40px;
+}
+.header .nav-modifier div .nav-button__div {
+  border-radius: 0;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.header .nav-modifier div .nav-button__div:focus {
+  box-shadow: 0 0 0 0;
+}
+.header .nav-modifier div div .navbar-nav {
+  list-style-type: none;
+  font-family: monospace;
+}
+
+.footer {
+  grid-area: footer;
+  background: linear-gradient(to right, #b6b6b6, #f2f2f2, #dbdbdb, #eaeaea);
+  line-height: 1;
+}
+.footer .footer__div {
+  height: 90%;
+  width: 100%;
+}
+.footer .footer__div .footer__div__container {
+  margin: 0 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer__div .footer__div__container a .footer__div__logos__img {
+  height: 35px;
+}
+.footer .footer__div .footer__div__container a .footer__div__logos__img:hover {
+  box-sizing: border-box;
+  border: 5px solid #C5C5C5;
+  box-shadow: 3px 3px #8c8c8c;
+}
+@media screen and (max-width: 500px) {
+  .footer .footer__div .footer__div__container {
+    margin: 5%;
+  }
+}
+.footer .footer__div .footer__div__links {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 20px;
+}
+.footer .footer__div .footer__div__links .footer__div__links__a {
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.footer .footer__div .footer__div__links .footer__div__links__a:hover {
+  color: #C5C5C5;
+  text-shadow: 1px 1px #8c8c8c;
+}
+@media screen and (max-width: 500px) {
+  .footer .footer__div .footer__div__links {
+    display: none;
+  }
+}
+.footer .footer__div .footer__div__paragraph .footer__div__p {
+  color: #000;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 299px) {
+  .footer .footer__div {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer .footer__div {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .footer .footer__div {
+    width: 80%;
+  }
+}
+
+.body-index {
+  display: grid;
+  grid-template-rows: auto 100vh 15vh;
+  grid-template-areas: "header" "main" "footer";
+  background-size: cover;
+  background-attachment: fixed;
+}
+.body-index .main-index {
+  grid-area: main;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.body-index .main-index .main-index__items {
+  color: #C5C5C5;
+  margin-top: 15vh;
+}
+.body-index .main-index .main-index__items .main-index__title1 {
+  font-size: 23rem;
+  height: 23rem;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 299px) {
+  .body-index .main-index .main-index__items .main-index__title1 {
+    font-size: 9rem;
+    height: 9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-index .main-index .main-index__items .main-index__title1 {
+    font-size: 11rem;
+    height: 11rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .body-index .main-index .main-index__items .main-index__title1 {
+    font-size: 15rem;
+    height: 15rem;
+  }
+}
+.body-index .main-index .main-index__items .main-index__title2 {
+  font-size: 2rem;
+  font-family: "M PLUS 1 Code", sans-serif;
+  letter-spacing: 11px;
+}
+@media screen and (max-width: 299px) {
+  .body-index .main-index .main-index__items .main-index__title2 {
+    font-size: 1.3rem;
+    text-align: left;
+    letter-spacing: normal;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-index .main-index .main-index__items .main-index__title2 {
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: normal;
+  }
+}
+@media screen and (max-width: 960px) {
+  .body-index .main-index .main-index__items .main-index__title2 {
+    text-align: center;
+  }
+}
+.body-index .main-index .main-index__items .main-index__btn {
+  margin-top: 11vh;
+}
+.body-index .main-index .main-index__items .main-index__btn a .btn {
+  background-color: #F13639;
+  border: none;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  padding: 10px 25px;
+  transition: box-shadow 0.5s;
+  transition: font-size 0.5s;
+}
+.body-index .main-index .main-index__items .main-index__btn a .btn:hover {
+  box-shadow: 0px 0px 20px #F13639;
+  font-size: 26px;
+}
+@media screen and (max-width: 299px) {
+  .body-index .main-index .main-index__items .main-index__btn a .btn {
+    font-size: 15px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
