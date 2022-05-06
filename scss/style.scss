@@ -7,25 +7,21 @@
 @import 'components/header';
 
 // header
-.header {
+header {
     grid-area: header;
-    .nav-background {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    .nav-modifier {
+    nav {
         padding-top: 0;
         padding-bottom: 0;
-
+        background-color: rgba(0, 0, 0, 0.5);
         div {
-            .navbar-brand {
+            a {
                 padding: 0;
                 padding-bottom: 0;
-
-                .nav__img {
+                img {
                     height: 40px;
                 }
             }
-            .nav-button__div{
+            button{
                 border-radius: 0;
                 padding: 0.25rem 0.75rem;
                 font-size: 1rem;
@@ -38,8 +34,7 @@
                 }
             }
             div{
-                .navbar-nav{
-                    list-style-type: none;
+                ul{
                     font-family: monospace;
                 }
             }
@@ -52,15 +47,16 @@
     grid-area: footer;
     background: linear-gradient(to right, #b6b6b6, #f2f2f2, #dbdbdb, #eaeaea);
     line-height: 1;
+    width: 100%;
     .footer__div{
         height: 90%;
-        width: 100%;
+        width: 500px;
         .footer__div__container{
             margin: 0 60px;
             display: flex;
             justify-content: space-around;
             a{
-                .footer__div__logos__img{
+                img{
                     height: 35px;
                     &:hover{
                         box-sizing: border-box;
@@ -80,6 +76,7 @@
             .footer__div__links__a{
                 color: nth($color, 1);
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
                 &:hover{
                     color: nth($color, 5);
                     text-shadow: 1px 1px nth($color, 4);
@@ -89,8 +86,8 @@
                 display: none;
             }
         }
-        .footer__div__paragraph{
-            .footer__div__p{
+        div{
+            p{
                 color: nth($color, 1);
                 letter-spacing: 2px;
             }
@@ -190,3 +187,22 @@
 }
 
 // aboutme
+.body-aboutme{
+    background-color: nth($color, 2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 95vh 15vh;
+    grid-template-areas:
+    "header header header"
+    "aboutmeavatar aboutmetxt aboutmetxt"
+    "footer footer footer";
+    .aboutme__avatar{
+        grid-area: aboutmeavatar;
+        background-color: nth($color, 3);
+    }
+    .aboutme__text{
+        grid-area: aboutmetxt;
+        margin: 0 auto;
+    }
+}
+// seguirrrrrrrrrrrrrrrrrrrrrrrr, después de terminar chekeo especificidad

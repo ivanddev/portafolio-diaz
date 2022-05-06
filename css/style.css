@@ -11,24 +11,22 @@
   font-family: "M PLUS 1 Code";
   src: url(../src/fonts/MPLUS1Code-VariableFont_wght.ttf);
 }
-.header {
+header {
   grid-area: header;
 }
-.header .nav-background {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.header .nav-modifier {
+header nav {
   padding-top: 0;
   padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.header .nav-modifier div .navbar-brand {
+header nav div a {
   padding: 0;
   padding-bottom: 0;
 }
-.header .nav-modifier div .navbar-brand .nav__img {
+header nav div a img {
   height: 40px;
 }
-.header .nav-modifier div .nav-button__div {
+header nav div button {
   border-radius: 0;
   padding: 0.25rem 0.75rem;
   font-size: 1rem;
@@ -37,11 +35,10 @@
   border: none;
   transition: box-shadow 0.15s ease-in-out;
 }
-.header .nav-modifier div .nav-button__div:focus {
+header nav div button:focus {
   box-shadow: 0 0 0 0;
 }
-.header .nav-modifier div div .navbar-nav {
-  list-style-type: none;
+header nav div div ul {
   font-family: monospace;
 }
 
@@ -49,20 +46,21 @@
   grid-area: footer;
   background: linear-gradient(to right, #b6b6b6, #f2f2f2, #dbdbdb, #eaeaea);
   line-height: 1;
+  width: 100%;
 }
 .footer .footer__div {
   height: 90%;
-  width: 100%;
+  width: 500px;
 }
 .footer .footer__div .footer__div__container {
   margin: 0 60px;
   display: flex;
   justify-content: space-around;
 }
-.footer .footer__div .footer__div__container a .footer__div__logos__img {
+.footer .footer__div .footer__div__container a img {
   height: 35px;
 }
-.footer .footer__div .footer__div__container a .footer__div__logos__img:hover {
+.footer .footer__div .footer__div__container a img:hover {
   box-sizing: border-box;
   border: 5px solid #C5C5C5;
   box-shadow: 3px 3px #8c8c8c;
@@ -80,6 +78,7 @@
 .footer .footer__div .footer__div__links .footer__div__links__a {
   color: #000;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
 }
 .footer .footer__div .footer__div__links .footer__div__links__a:hover {
   color: #C5C5C5;
@@ -90,7 +89,7 @@
     display: none;
   }
 }
-.footer .footer__div .footer__div__paragraph .footer__div__p {
+.footer .footer__div div p {
   color: #000;
   letter-spacing: 2px;
 }
@@ -198,6 +197,22 @@
   .body-index .main-index .main-index__items .main-index__btn a .btn {
     font-size: 15px;
   }
+}
+
+.body-aboutme {
+  background-color: #161622;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 95vh 15vh;
+  grid-template-areas: "header header header" "aboutmeavatar aboutmetxt aboutmetxt" "footer footer footer";
+}
+.body-aboutme .aboutme__avatar {
+  grid-area: aboutmeavatar;
+  background-color: #212433;
+}
+.body-aboutme .aboutme__text {
+  grid-area: aboutmetxt;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
