@@ -1,0 +1,19 @@
+{
+  "name": "portafolio-diaz",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Iván Díaz</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina and this portfolio is my final project for Coderhouse!</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanddev/portafolio-diaz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanddev/portafolio-diaz/issues"
+  },
+  "homepage": "https://github.com/ivanddev/portafolio-diaz#readme"
+}
