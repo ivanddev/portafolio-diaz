@@ -1,0 +1,84 @@
+// index
+.body-index{
+    display: grid;
+    grid-template-rows: auto 100vh 15vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    background-size: cover;
+    background-attachment: fixed;
+    .main-index{
+        grid-area: main;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        .main-index__items{
+            color: nth($color, 5);
+            margin-top: 15vh;
+            .main-index__title1{
+                font-size: 23rem;
+                height: 23rem;
+                font-family: $title-font;
+                font-weight: bold;
+                margin-bottom: 0;
+                @media screen and (max-width: $mobile-s){
+                    font-size: 9rem;
+                    height: 9rem;
+                }
+                @media screen and (min-width:$mobile-s) and (max-width: $mobile){
+                    font-size: 11rem;
+                    height: 11rem;
+                }
+                @media screen and (min-width:$mobile) and (max-width: $tablet){
+                    font-size: 15rem;
+                    height: 15rem;
+                }
+            }
+            .main-index__title2{
+                font-size: 2rem;
+                font-family: $subtitle-and-p-font;
+                letter-spacing: 11px;
+                @media screen and (max-width: $mobile-s){
+                    font-size: 1.3rem;
+                    text-align: left;
+                    letter-spacing: normal;
+                }
+                @media screen and (min-width:$mobile-s) and (max-width: $mobile){
+                    font-size: 1.5rem;
+                    text-align: left;
+                    letter-spacing: normal;
+                }
+                @media screen and (min-width: $mobile) and (max-width: $tablet){
+                    text-align: center;
+                }
+            }
+            .main-index__btn{
+                margin-top: 11vh;
+                a{
+                    .btn{
+                        background-color: map-get($btn, bg-btn);
+                        border: map-get($btn, border);
+                        font-family: map-get($btn, f-family);
+                        font-size: map-get($btn , f-size);
+                        letter-spacing: map-get($btn , letter-spac);
+                        word-spacing: map-get($btn , word-spac);
+                        padding: map-get($btn , padding);
+                        transition: box-shadow .5s;
+                        transition: font-size .5s;
+                        &:hover{
+                            box-shadow: map-get($btn , box-shadow-hover );
+                            font-size: map-get($btn , f-size-hover);
+                        }
+                        @media screen and (max-width: $mobile-s){
+                            font-size: map-get($btn , f-size-mobile-s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (orientation: landscape) and (max-width: $landscape){
+        grid-template-rows: auto 600px 150px;
+    }
+}

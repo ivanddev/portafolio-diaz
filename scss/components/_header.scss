@@ -1,0 +1,35 @@
+// header
+header {
+    grid-area: header;
+    nav {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        div {
+            a {
+                padding: 0;
+                padding-bottom: 0;
+                img {
+                    height: 40px;
+                }
+            }
+            button{
+                border-radius: 0;
+                padding: 0.25rem 0.75rem;
+                font-size: 1rem;
+                line-height: 1;
+                background-color: transparent;
+                border: none;
+                transition: box-shadow .15s ease-in-out;
+                &:focus{
+                    box-shadow: 0 0 0 0;
+                }
+            }
+            div{
+                ul{
+                    font-family: monospace;
+                }
+            }
+        }
+    }
+}

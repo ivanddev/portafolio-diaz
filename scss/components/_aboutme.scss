@@ -1,0 +1,79 @@
+// aboutme
+.body-aboutme{
+    background-color: nth($color, 2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 95vh 15vh;
+    grid-template-areas:
+    "header header header"
+    "aboutmeavatar aboutmetxt aboutmetxt"
+    "footer footer footer";
+    .aboutme__avatar{
+        grid-area: aboutmeavatar;
+        background-color: nth($color, 3);
+        .aboutme__container__avatar{
+            height: 100%;
+            .aboutme__container__avatar__img{
+                border-radius: 50%;
+                border-width: 10px;
+                border-style: double;
+                border-color: nth($color, 5);
+                height: 50%;
+                margin: 0 auto;
+                box-shadow: 0 0 10px #000;
+                @media screen and (max-width:$mobile){
+                    margin: auto auto;
+                    height: 70%;
+                }
+                @media screen and (min-width: $mobile) and (max-width:$tablet){
+                    height: 30%;
+                }
+            }
+            @media screen and (max-width:$mobile){
+                border: none;
+            }
+        }
+    }
+    .aboutme__text{
+        grid-area: aboutmetxt;
+        margin: 0 auto;
+        .aboutme__container__text{
+            background-color: nth($color, 3);
+            box-shadow: 15px 0 10px #000;
+            .aboutme__container__text__h2{
+                margin: 20px 0;
+                font-family: $title-font;
+                color: nth($color, 5);
+                font-size: 8rem;
+                text-shadow: 5px 5px #000;
+                @media screen and (max-width:$mobile){
+                    font-size: 3rem;
+                }
+                @media screen and (min-width:$mobile) and (max-width:$tablet){
+                    font-size: 2.5rem;
+                }
+            }
+            .aboutme__container__text__p{
+                width: 80%;
+                margin: 0 auto 5% auto;
+                font-family: $subtitle-and-p-font;
+                color: nth($color, 5);
+                @media screen and (max-width:$mobile){
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:$mobile){
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 30vh 65vh 15vh;
+        grid-template-areas:
+        "header"
+        "aboutmeavatar"
+        "aboutmetxt"
+        "footer";
+    }
+    @media screen and (orientation: landscape) and (max-width: $landscape){
+        grid-template-rows: auto 600px 150px;
+    }
+}
