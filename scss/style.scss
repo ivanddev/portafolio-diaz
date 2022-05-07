@@ -614,3 +614,343 @@ ul {
 .btn--form {
     height: 55px;
 }
+
+/*----------- RESPONSIVE @media query ----------- */
+/*----------- RESPONSIVE @media query ----------- */
+/*----------- RESPONSIVE @media query ----------- */
+
+
+/* MOBILE S */
+@media (max-width:299px) {
+
+
+    /* PORTFOLIO */
+    .main-portfolio {
+        width: 100%;
+    }
+
+    .portfolio-coverscontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-coverscontainer-title {
+        margin: 10% 0 10% 0;
+    }
+
+    .portfolio-bannerscontainer {
+        width: 90%;
+        grid-template-rows: 10vh repeat(5, 7vh);
+    }
+
+
+    /*----------- CLIENT ----------- */
+    .body-client {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 55vh 15vh;
+        grid-template-areas:
+            "header"
+            "clienttitle"
+            "clientp"
+            "footer";
+    }
+
+    .client-container__h1 {
+        font-size: 3rem;
+    }
+
+    .client-container__paragraph {
+        display: grid;
+        align-items: center;
+        grid-template-rows: 30vh 5vh;
+        grid-template-areas:
+            "paragraph"
+            "img";
+        height: 70%;
+    }
+
+    .client-container__paragraph__p {
+        grid-area: paragraph;
+    }
+
+    /*----------- CONTACT ----------- */
+    .contact-title {
+        height: 200px;
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4";
+    }
+
+    .cards {
+        height: 100px;
+        width: 100px;
+    }
+
+    .contact-container__cards-titles {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .contact-container__article {
+        height: 10vh;
+    }
+
+    .contact-img {
+        height: 70%;
+    }
+
+}
+
+
+
+
+/* MOBILE NORMAL */
+@media (min-width:300px) and (max-width:499px) {
+
+
+    /* PORTFOLIO */
+    .main-portfolio {
+        width: 100%;
+    }
+
+    .portfolio-coverscontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-coverscontainer-title {
+        margin: 10% 0 10% 0;
+    }
+
+    .portfolio-bannerscontainer {
+        width: 90%;
+        grid-template-rows: 10vh repeat(5, 7vh);
+    }
+
+
+    /*----------- CLIENT ----------- */
+    .body-client {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 55vh 15vh;
+        grid-template-areas:
+            "header"
+            "clienttitle"
+            "clientp"
+            "footer";
+    }
+
+    .client-container__h1 {
+        font-size: 3rem;
+    }
+
+    .client-container__paragraph {
+        display: grid;
+        align-items: center;
+        grid-template-rows: 30vh 5vh;
+        grid-template-areas:
+            "paragraph"
+            "img";
+        height: 70%;
+    }
+
+    .client-container__paragraph__p {
+        grid-area: paragraph;
+    }
+
+    /*----------- CONTACT ----------- */
+
+    .contact-title {
+        height: 200px;
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4";
+    }
+
+    .cards {
+        height: 130px;
+        width: 130px;
+    }
+
+    .contact-container__cards-titles {
+        padding: 0 10px;
+    }
+
+    .contact-container__article {
+        height: 10vh;
+    }
+
+    .contact-img {
+        height: 70%;
+    }
+
+}
+
+
+
+
+/*----------- TABLET ----------- */
+@media (min-width:500px) and (max-width: 960px) {
+
+
+    /* PORTFOLIO */
+    .main-portfolio {
+        width: 100%;
+    }
+
+    .portfolio-coverscontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-coverscontainer-title {
+        margin: 6% 0 6% 0;
+    }
+
+    .portfolio-bannerscontainer {
+        width: 90%;
+        grid-template-rows: 10vh repeat(5, 7vh);
+    }
+
+
+    /* CLIENT */
+    .client-container__h1 {
+        font-size: 3rem;
+    }
+
+    .client-container__b {
+        font-size: 9rem;
+    }
+
+    .client-container__paragraph__p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*----------- CONTACT ----------- */
+
+    .contact-container__article {
+        height: 120px;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4";
+    }
+
+    .cards {
+        height: 200px;
+        width: 200px;
+    }
+
+    .contact-container__cards-titles {
+        padding: 0 10px;
+    }
+
+    .contact-form__div {
+        width: 400px;
+        height: 500px;
+        padding: 40px 40px 0 40px;
+    }
+
+    .btn--form {
+        width: 100%;
+    }
+}
+
+@media (min-width:961px) {
+    .contact-form__div {
+        width: 400px;
+        height: 500px;
+        padding: 40px 40px 0 40px;
+    }
+
+    .btn--form {
+        width: 100%;
+    }
+
+    .client-container__img {
+        height: 40px;
+    }
+}
+
+
+/* FORM */
+@media (min-width: 220px) {
+    .contact-form__div {
+        width: 200px;
+        height: 400px;
+        padding: 20px 20px 0 20px;
+        font-size: 12px;
+    }
+
+    .btn--form {
+        height: 40px;
+    }
+
+}
+
+@media (min-width: 300px) {
+    .btn {
+        font-size: 20px;
+    }
+
+    .btn--form {
+        height: 50px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .contact-form__div {
+        width: 500px;
+        height: 600px;
+        padding: 50px 50px 0 50px;
+    }
+
+    .btn--form {
+        width: 100%;
+    }
+}
+
+
+
+/* LANDSCAPE */
+@media screen and (orientation:landscape) and (max-width: 920px){
+    .body-portfolio {
+        grid-template-rows: auto 1200px 150px;
+    }
+    .portfolio-bannerscontainer {
+        grid-template-rows: 110px repeat(5, 100px);
+    }
+    .body-client {
+        grid-template-rows: auto 350px 150px;
+    }
+    .body-contact {
+        grid-template-rows: auto 800px 600px 150px;
+    }
+}
