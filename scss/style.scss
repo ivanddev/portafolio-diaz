@@ -125,37 +125,37 @@ header {
             .main-index__title1{
                 font-size: 23rem;
                 height: 23rem;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $title-font;
                 font-weight: bold;
                 margin-bottom: 0;
                 @media screen and (max-width: $mobile-s){
                     font-size: 9rem;
                     height: 9rem;
                 }
-                @media screen and (max-width: $mobile){
+                @media screen and (min-width:$mobile-s) and (max-width: $mobile){
                     font-size: 11rem;
                     height: 11rem;
                 }
-                @media screen and (max-width: $tablet){
+                @media screen and (min-width:$mobile) and (max-width: $tablet){
                     font-size: 15rem;
                     height: 15rem;
                 }
             }
             .main-index__title2{
                 font-size: 2rem;
-                font-family: 'M PLUS 1 Code', sans-serif;
+                font-family: $subtitle-and-p-font;
                 letter-spacing: 11px;
                 @media screen and (max-width: $mobile-s){
                     font-size: 1.3rem;
                     text-align: left;
                     letter-spacing: normal;
                 }
-                @media screen and (max-width: $mobile){
+                @media screen and (min-width:$mobile-s) and (max-width: $mobile){
                     font-size: 1.5rem;
                     text-align: left;
                     letter-spacing: normal;
                 }
-                @media screen and (max-width: $tablet){
+                @media screen and (min-width: $mobile) and (max-width: $tablet){
                     text-align: center;
                 }
             }
@@ -184,6 +184,9 @@ header {
             }
         }
     }
+    @media screen and (orientation: landscape) and (max-width: $landscape){
+        grid-template-rows: auto 600px 150px;
+    }
 }
 
 // aboutme
@@ -199,10 +202,415 @@ header {
     .aboutme__avatar{
         grid-area: aboutmeavatar;
         background-color: nth($color, 3);
+        .aboutme__container__avatar{
+            height: 100%;
+            .aboutme__container__avatar__img{
+                border-radius: 50%;
+                border-width: 10px;
+                border-style: double;
+                border-color: nth($color, 5);
+                height: 50%;
+                margin: 0 auto;
+                box-shadow: 0 0 10px #000;
+                @media screen and (max-width:$mobile){
+                    margin: auto auto;
+                    height: 70%;
+                }
+                @media screen and (min-width: $mobile) and (max-width:$tablet){
+                    height: 30%;
+                }
+            }
+            @media screen and (max-width:$mobile){
+                border: none;
+            }
+        }
     }
     .aboutme__text{
         grid-area: aboutmetxt;
         margin: 0 auto;
+        .aboutme__container__text{
+            background-color: nth($color, 3);
+            box-shadow: 15px 0 10px #000;
+            .aboutme__container__text__h2{
+                margin: 20px 0;
+                font-family: $title-font;
+                color: nth($color, 5);
+                font-size: 8rem;
+                text-shadow: 5px 5px #000;
+                @media screen and (max-width:$mobile){
+                    font-size: 3rem;
+                }
+                @media screen and (min-width:$mobile) and (max-width:$tablet){
+                    font-size: 2.5rem;
+                }
+            }
+            .aboutme__container__text__p{
+                width: 80%;
+                margin: 0 auto 5% auto;
+                font-family: $subtitle-and-p-font;
+                color: nth($color, 5);
+                @media screen and (max-width:$mobile){
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:$mobile){
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 30vh 65vh 15vh;
+        grid-template-areas:
+        "header"
+        "aboutmeavatar"
+        "aboutmetxt"
+        "footer";
+    }
+    @media screen and (orientation: landscape) and (max-width: $landscape){
+        grid-template-rows: auto 600px 150px;
     }
 }
-// seguirrrrrrrrrrrrrrrrrrrrrrrr, después de terminar chekeo especificidad
+
+//borrar apartir de acá, es codigo CSS
+//borrar apartir de acá, es codigo CSS
+//borrar apartir de acá, es codigo CSS
+//borrar apartir de acá, es codigo CSS
+//borrar apartir de acá, es codigo CSS
+/*----------- PORTFOLIO ----------- */
+.body-portfolio {
+    background-color: #161622;
+    display: grid;
+    grid-template-rows: auto auto 15vh;
+    grid-template-areas:
+        "header"
+        "portfolio"
+        "footer";
+
+}
+
+.main-portfolio {
+    width: 70%;
+    margin: 0 auto;
+    grid-area: portfolio;
+    justify-items: center;
+}
+
+.img-containers {
+    background-color: #212433;
+    color: #000;
+    box-shadow: 0px 0 15px #000;
+}
+
+.img-containers-titles {
+    width: 50%;
+    background-color: #C5C5C5;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+}
+
+.portfolio-coverscontainer {
+    margin: 10vh 0 0 0;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 15vh 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2vh 0;
+}
+
+.carousel {
+    width: 100%;
+    ;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: #C5C5C5;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+.portfolio-bannerscontainer {
+    margin: 10vh 0;
+    display: grid;
+    grid-template-rows: 15vh repeat(5, 19vh);
+    align-items: center;
+    background-color: #212433;
+    width: 80%;
+    justify-items: center;
+    gap: 2vh 0;
+}
+
+
+.portfolio-bannerscontainer__article {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    align-content: center;
+}
+
+.portfolio-bannerscontainer__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* HOVER */
+.imghover {
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+.imghover:hover {
+    transform: scale(1.2);
+    transition: transform .3s;
+}
+
+
+/*----------- CLIENT ----------- */
+.body-client {
+    background-color: #161622;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 95vh 15vh;
+    grid-template-areas:
+        "header header header"
+        "clienttitle clientp clientp"
+        "footer footer footer";
+}
+
+.client-container__titles {
+    grid-area: clienttitle;
+    height: 100%;
+    text-shadow: 5px 5px #000;
+    background: #212433;
+}
+
+.client-container__title {
+    width: 100%;
+    color: #C5C5C5;
+}
+
+.client-container__h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    letter-spacing: 10px;
+}
+
+.client-container__b {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15rem;
+}
+
+.client-container__text {
+    grid-area: clientp;
+}
+
+.client-container__img {
+    height: 20px;
+    margin-left: 4%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #000;
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
+}
+
+.client-container__paragraph {
+    height: 30%;
+    background: #212433;
+    box-shadow: 15px 0 10px #000;
+}
+
+.client-container__paragraph__p {
+    width: 80%;
+    margin: 0 auto;
+    color: #C5C5C5;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.h7 {
+    font-size: calc(0.6rem + .6vw);
+}
+.h8 {
+    font-size: calc(0.4rem + 0.5vw);
+}
+
+/*----------- CONTACT ----------- */
+.body-contact {
+    background-color: #161622;
+    display: grid;
+    grid-template-rows: auto 95vh 85vh 15vh;
+    grid-template-areas:
+        "header"
+        "main-contact"
+        "contact-form"
+        "footer";
+}
+
+.main-contact {
+    grid-area: main-contact;
+}
+
+.contact-title {
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #C5C5C5;
+    display: flex;
+    font-family: 'Bebas Neue';
+    letter-spacing: 5px;
+    font-size: 100px;
+    text-shadow: 5px 5px #000;
+    background: #212433;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px;
+    grid-template-areas:
+        "card1 card2 card3 card4";
+}
+
+.contact-container__card1 {
+    grid-area: card1;
+}
+
+.contact-container__card2 {
+    grid-area: card2;
+}
+
+.contact-container__card3 {
+    grid-area: card3;
+}
+
+.contact-container__card4 {
+    grid-area: card4;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    background-color: #212433;
+    border-radius: 50%;
+    box-shadow: 0px 0 10px #000;
+}
+
+.contact-container__cards-titles {
+    margin: 20% 0;
+    background-color: #31364d;
+    color: #C5C5C5;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+}
+
+.contact-container__article {
+    margin: 20% 0;
+    height: 20vh;
+}
+
+.contact-img {
+    height: 100%;
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
+}
+
+/* HOVER */
+.imghover2:hover {
+    filter: invert(90%);
+}
+
+.contact-form {
+    grid-area: contact-form;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    height: 100%;
+    width: 100%
+}
+
+.contact-form__div {
+    height: 500px;
+    width: 300px;
+    padding: 30px 30px 0 30px;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        "contact-form__logo"
+        "form";
+    color: #C5C5C5;
+    background-color: #212433;
+}
+
+.contact-form__logo {
+    grid-area: contact-form__logo;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact-form__logo__img {
+    height: 80%;
+}
+
+.form {
+    grid-area: form;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "fn ls"
+        "em em"
+        "com com"
+        "but but";
+    column-gap: 10px;
+}
+
+.fn {
+    grid-area: fn;
+}
+
+.ls {
+    grid-area: ls;
+}
+
+.em {
+    grid-area: em;
+}
+
+.com {
+    grid-area: com;
+}
+
+.but {
+    grid-area: but;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    background-color: #C5C5C5;
+    border: none;
+}
+
+.btn--form {
+    height: 55px;
+}
