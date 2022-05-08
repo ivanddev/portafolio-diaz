@@ -1,10 +1,11 @@
 // header
 header {
     grid-area: header;
+
     nav {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: transparent;
         div {
             a {
                 padding: 0;
