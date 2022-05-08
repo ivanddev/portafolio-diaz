@@ -1,0 +1,91 @@
+// client
+.body-client{
+    background-color: nth($color, 2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 95vh 15vh;
+    grid-template-areas:
+        "header header header"
+        "clienttitle clientp clientp"
+        "footer footer footer";
+    .client-container__titles{
+        grid-area: clienttitle;
+        height: 100%;
+        text-shadow: 5px 5px #000;
+        background-color: nth($color, 3);
+        .client-container__title{
+            width: 100%;
+            color: nth($color, 5);
+            div{
+                h1{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 6rem;
+                    letter-spacing: 10px;
+                    @media screen and (max-width:$tablet){
+                        font-size: 3rem;
+                    }
+                }
+                b{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 15rem;
+                    @media screen and (min-width:$mobile) and (max-width:$tablet){
+                        font-size: 9rem;
+                    }
+                }
+            }
+        }
+    }
+    .client-container__text{
+        grid-area: clientp;
+        div{
+            height: 30%;
+            background-color: nth($color, 3);
+            box-shadow: 15px 0 10px #000;
+            img{
+                height: 40px;
+                margin-left: 4%;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px #000;
+                filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
+                @media screen and (max-width:$tablet){
+                    height: 20px;
+                }
+            }
+            p{
+                width: 80%;
+                margin: 0 auto;
+                color: nth($color, 5);
+                font-family: 'M PLUS 1 Code', sans-serif;
+                @media screen and (max-width:$mobile){
+                    grid-area: paragraph;
+                }
+                @media screen and (min-width:$mobile) and (max-width:$tablet){
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                
+            }
+            @media screen and (max-width:$mobile){
+                height: 70%;
+                display: grid;
+                grid-template-rows: 30vh 5vh;
+                grid-template-areas:
+                    "paragraph"
+                    "img";
+                align-items: center;
+            }
+        }
+    }
+    @media screen and (max-width:$mobile){
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 55vh 15vh;
+        grid-template-areas:
+            "header"
+            "clienttitle"
+            "clientp"
+            "footer";
+    }
+    @media screen and (orientation:landscape) and (max-width:$landscape){
+        grid-template-rows: auto 350px 150px;
+    }
+}

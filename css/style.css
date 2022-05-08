@@ -401,7 +401,6 @@ header nav div div ul {
   transition: transform 0.3s;
 }
 
-/*----------- CLIENT ----------- */
 .body-client {
   background-color: #161622;
   display: grid;
@@ -409,61 +408,92 @@ header nav div div ul {
   grid-template-rows: auto 95vh 15vh;
   grid-template-areas: "header header header" "clienttitle clientp clientp" "footer footer footer";
 }
-
-.client-container__titles {
+.body-client .client-container__titles {
   grid-area: clienttitle;
   height: 100%;
   text-shadow: 5px 5px #000;
-  background: #212433;
+  background-color: #212433;
 }
-
-.client-container__title {
+.body-client .client-container__titles .client-container__title {
   width: 100%;
   color: #C5C5C5;
 }
-
-.client-container__h1 {
+.body-client .client-container__titles .client-container__title div h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 6rem;
   letter-spacing: 10px;
 }
-
-.client-container__b {
+@media screen and (max-width: 960px) {
+  .body-client .client-container__titles .client-container__title div h1 {
+    font-size: 3rem;
+  }
+}
+.body-client .client-container__titles .client-container__title div b {
   font-family: "Bebas Neue", cursive;
   font-size: 15rem;
 }
-
-.client-container__text {
+@media screen and (min-width: 500px) and (max-width: 960px) {
+  .body-client .client-container__titles .client-container__title div b {
+    font-size: 9rem;
+  }
+}
+.body-client .client-container__text {
   grid-area: clientp;
 }
-
-.client-container__img {
-  height: 20px;
+.body-client .client-container__text div {
+  height: 30%;
+  background-color: #212433;
+  box-shadow: 15px 0 10px #000;
+}
+.body-client .client-container__text div img {
+  height: 40px;
   margin-left: 4%;
   border-radius: 50%;
   box-shadow: 0px 0px 5px #000;
   filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
 }
-
-.client-container__paragraph {
-  height: 30%;
-  background: #212433;
-  box-shadow: 15px 0 10px #000;
+@media screen and (max-width: 960px) {
+  .body-client .client-container__text div img {
+    height: 20px;
+  }
 }
-
-.client-container__paragraph__p {
+.body-client .client-container__text div p {
   width: 80%;
   margin: 0 auto;
   color: #C5C5C5;
   font-family: "M PLUS 1 Code", sans-serif;
 }
-
-.h7 {
-  font-size: calc(0.6rem + 0.6vw);
+@media screen and (max-width: 500px) {
+  .body-client .client-container__text div p {
+    grid-area: paragraph;
+  }
 }
-
-.h8 {
-  font-size: calc(0.4rem + 0.5vw);
+@media screen and (min-width: 500px) and (max-width: 960px) {
+  .body-client .client-container__text div p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-client .client-container__text div {
+    height: 70%;
+    display: grid;
+    grid-template-rows: 30vh 5vh;
+    grid-template-areas: "paragraph" "img";
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-client {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 55vh 15vh;
+    grid-template-areas: "header" "clienttitle" "clientp" "footer";
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 920px) {
+  .body-client {
+    grid-template-rows: auto 350px 150px;
+  }
 }
 
 /*----------- CONTACT ----------- */
