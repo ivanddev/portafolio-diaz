@@ -1,0 +1,237 @@
+// contact
+.body-contact{
+    background-color: nth($color, 2);
+    display: grid;
+    grid-template-rows: auto 800px 650px 15vh;
+    grid-template-areas:
+        "header"
+        "main-contact"
+        "contact-form"
+        "footer";
+    main{
+        grid-area: main-contact;
+        h1{
+            height: 250px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue';
+            letter-spacing: 5px;
+            font-size: 100px;
+            text-shadow: 5px 5px #000;
+            color: nth($color, 5);
+            background-color: nth($color, 3);
+            @media screen and (max-width: $mobile){
+                height: 200px;
+                font-size: 2rem;
+            }
+            @media screen and (min-width:$mobile) and (max-width: $tablet){
+                font-size: 3rem;
+            }
+        }
+        .contact-container{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 500px;
+            grid-template-areas:
+                "card1 card2 card3 card4";
+            width: 80%;
+            margin: 0 auto;
+            .contact-container__card1{
+                grid-area: card1;
+            }
+            .contact-container__card2{
+                grid-area: card2;
+            }
+            .contact-container__card3{
+                grid-area: card3;
+            }
+            .contact-container__card4{
+                grid-area: card4;
+            }
+            .cards{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: center;
+                width: 90%;
+                background-color: nth($color, 3);
+                border-radius: 50%;
+                box-shadow: 0px 0 10px #000;
+                article{
+                    margin: 20% 0;
+                    height: 20vh;
+                    img{
+                        height: 100%;
+                        filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
+                        &:hover{
+                            filter: invert(90%);
+                        }
+                        @media screen and (max-width: $mobile){
+                            height: 70%;
+                        }
+                    }
+                    div{
+                        margin: 20% 0;
+                        background-color: lighten( #212433, 5%);
+                        color: nth($color, 5);
+                        font-family: 'Bebas Neue';
+                        letter-spacing: 3px;
+                        @media screen and (max-width: $tablet){
+                            padding: 0 10px;
+                            font-size: 10px;
+                        }
+                    }
+                    @media screen and (max-width: $mobile){
+                        height: 10vh;
+                    }
+                    @media screen and (min-width:$mobile) and (max-width: $tablet){
+                        height: 120px;
+                    }
+                }
+                @media screen and (max-width: $mobile-s){
+                    height: 100px;
+                    width: 100px;
+                }
+                @media screen and (min-width:$mobile-s) and (max-width: $mobile){
+                    height: 130px;
+                    width: 130px;
+                }
+                @media screen and (min-width:$mobile) and (max-width: $tablet){
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+            @media screen and (max-width: $mobile){
+                width: 90%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px 200px;
+                grid-template-areas:
+                    "card1 card2"
+                    "card3 card4";
+            }
+            @media screen and (min-width:$mobile) and (max-width: $tablet){
+                width: 90%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 250px 250px;
+                grid-template-areas:
+                    "card1 card2"
+                    "card3 card4";
+            }
+        }
+    }
+    .contact-form{
+        grid-area: contact-form;
+        display: flex;
+        align-items: start;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        .contact-form__div{
+            height: 550px;
+            width: 450px;
+            padding: 30px 30px 0 30px;
+            display: grid;
+            grid-template-rows: 15% 85%;
+            grid-template-areas:
+                "contact-form__logo"
+                "form";
+            color: nth($color, 5);
+            background-color: nth($color, 3);
+            .contact-form__logo{
+                grid-area: contact-form__logo;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                img{
+                    height: 80%;
+                }
+            }
+            form{
+                grid-area: form;
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "fn ls"
+                    "em em"
+                    "com com"
+                    "but but";
+                column-gap: 10px;
+                .fn {
+                    grid-area: fn;
+                }
+                
+                .ls {
+                    grid-area: ls;
+                }
+                
+                .em {
+                    grid-area: em;
+                }
+                
+                .com {
+                    grid-area: com;
+                }
+                
+                .but {
+                    grid-area: but;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .btn{
+                        background-color: map-get($btn, bg-btn);
+                        border: map-get($btn, border);
+                        font-family: map-get($btn, f-family);
+                        font-size: map-get($btn , f-size);
+                        letter-spacing: map-get($btn , letter-spac);
+                        word-spacing: map-get($btn , word-spac);
+                        padding: map-get($btn , padding);
+                        transition: box-shadow .5s;
+                        transition: font-size .5s;
+                        box-shadow: map-get($btn, box-shadow );
+                        &:hover{
+                            box-shadow: map-get($btn , box-shadow-hover );
+                            font-size: map-get($btn , f-size-hover);
+                        }
+                    }
+                    .btn--form{
+                        height: 55px;
+                        width: 100%;
+                        @media screen and (max-width:$mobile){
+                            height: 40px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                div{
+                    .form__input, .form__textarea {
+                        width: 100%;
+                        background-color: nth($color, 5);
+                        border: none;
+                    }
+                }
+            }
+            @media screen and (min-width:$mobile) and (max-width: $tablet){
+                width: 400px;
+                height: 500px;
+                padding: 40px 40px 0 40px;
+            }
+            @media screen and (max-width:$mobile){
+                width: 300px;
+                height: 450px;
+            }
+            @media screen and (max-width:$mobile-s){
+                width: 250px;
+                height: 450px;
+            }
+        }
+    }
+    @media screen and (orientation:landscape) and (max-width: $landscape){
+        grid-template-rows: auto 800px 650px 150px;
+    }
+}

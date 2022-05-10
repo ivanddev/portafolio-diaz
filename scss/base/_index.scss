@@ -66,6 +66,7 @@
                         padding: map-get($btn , padding);
                         transition: box-shadow .5s;
                         transition: font-size .5s;
+                        box-shadow: map-get($btn, box-shadow );
                         &:hover{
                             box-shadow: map-get($btn , box-shadow-hover );
                             font-size: map-get($btn , f-size-hover);
