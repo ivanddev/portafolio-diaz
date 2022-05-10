@@ -1,13 +1,14 @@
 // index
 .body-index{
     display: grid;
-    grid-template-rows: auto 100vh 15vh;
+    grid-template-rows: auto calc(100vh - 4rem) 15vh;
     grid-template-areas:
         "header"
         "main"
         "footer";
     background-size: cover;
     background-attachment: fixed;
+    height: 100%;
     .main-index{
         grid-area: main;
         display: flex;

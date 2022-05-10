@@ -3,7 +3,7 @@
     background-color: nth($color, 2);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 95vh 15vh;
+    grid-template-rows: auto calc(100vh - 4rem) 15vh;
     grid-template-areas:
     "header header header"
     "aboutmeavatar aboutmetxt aboutmetxt"
@@ -66,7 +66,7 @@
     }
     @media screen and (max-width:$mobile){
         grid-template-columns: 1fr;
-        grid-template-rows: auto 30vh 65vh 15vh;
+        grid-template-rows: auto 30vh calc(70vh - 4rem) 15vh;
         grid-template-areas:
         "header"
         "aboutmeavatar"

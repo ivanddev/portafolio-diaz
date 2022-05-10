@@ -40,11 +40,11 @@ header nav div button {
   font-size: 1rem;
   line-height: 1;
   background-color: transparent;
-  border: none;
+  border: none !important;
   transition: box-shadow 0.15s ease-in-out;
 }
 header nav div button:focus {
-  box-shadow: 0 0 0 0;
+  box-shadow: none !important;
 }
 header nav div div ul {
   font-family: monospace;
@@ -119,10 +119,11 @@ header nav div div ul {
 
 .body-index {
   display: grid;
-  grid-template-rows: auto 100vh 15vh;
+  grid-template-rows: auto calc(100vh - 4rem) 15vh;
   grid-template-areas: "header" "main" "footer";
   background-size: cover;
   background-attachment: fixed;
+  height: 100%;
 }
 .body-index .main-index {
   grid-area: main;
@@ -217,7 +218,7 @@ header nav div div ul {
   background-color: #161622;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 95vh 15vh;
+  grid-template-rows: auto calc(100vh - 4rem) 15vh;
   grid-template-areas: "header header header" "aboutmeavatar aboutmetxt aboutmetxt" "footer footer footer";
 }
 .body-aboutme .aboutme__avatar {
@@ -291,7 +292,7 @@ header nav div div ul {
 @media screen and (max-width: 500px) {
   .body-aboutme {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 30vh 65vh 15vh;
+    grid-template-rows: auto 30vh calc(70vh - 4rem) 15vh;
     grid-template-areas: "header" "aboutmeavatar" "aboutmetxt" "footer";
   }
 }
@@ -414,7 +415,7 @@ header nav div div ul {
   background-color: #161622;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 95vh 15vh;
+  grid-template-rows: auto calc(100vh - 4rem) 15vh;
   grid-template-areas: "header header header" "clienttitle clientp clientp" "footer footer footer";
 }
 .body-client .client-container__titles {
