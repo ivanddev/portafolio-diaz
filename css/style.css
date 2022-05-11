@@ -128,8 +128,8 @@ header nav div div ul {
 .body-index .main-index {
   grid-area: main;
   display: flex;
-  text-align: center;
   justify-content: center;
+  text-align: center;
 }
 .body-index .main-index .main-index__items {
   color: #C5C5C5;
@@ -519,8 +519,8 @@ header nav div div ul {
   height: 250px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: "Bebas Neue";
   letter-spacing: 5px;
   font-size: 100px;
@@ -563,8 +563,8 @@ header nav div div ul {
 }
 .body-contact main .contact-container .cards {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
   text-align: center;
   width: 90%;
   background-color: #212433;
@@ -647,9 +647,9 @@ header nav div div ul {
 .body-contact .contact-form {
   grid-area: contact-form;
   display: flex;
+  justify-content: center;
   align-items: start;
   text-align: left;
-  justify-content: center;
   height: 100%;
   width: 100%;
 }

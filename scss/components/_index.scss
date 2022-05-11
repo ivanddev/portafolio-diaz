@@ -12,8 +12,8 @@
     .main-index{
         grid-area: main;
         display: flex;
-        text-align: center;
         justify-content: center;
+        text-align: center;
         .main-index__items{
             color: nth($color, 5);
             margin-top: 15vh;

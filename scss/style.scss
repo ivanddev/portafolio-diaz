@@ -1,15 +1,17 @@
-@import 'components/general-style';
-@import 'components/fonts';
-@import 'components/variables';
-@import 'components/lists';
-@import 'components/mediaquery';
-@import 'components/maps';
-@import 'base/header';
-@import 'base/footer';
-@import 'base/index';
-@import 'base/aboutme';
-@import 'base/portfolio';
-@import 'base/client';
-@import 'base/contact';
+@import 'base/general-style';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/lists';
+@import 'base/mediaquery';
+@import 'base/maps';
+@import 'base/extends';
+@import 'base/mixin';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/index';
+@import 'components/aboutme';
+@import 'components/portfolio';
+@import 'components/client';
+@import 'components/contact';
 
 
