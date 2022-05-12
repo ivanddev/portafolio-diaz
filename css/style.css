@@ -63,7 +63,9 @@ header nav div div ul {
 .footer .footer__div .footer__div__container {
   margin: 0 60px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  text-align: none;
 }
 .footer .footer__div .footer__div__container a img {
   height: 35px;
@@ -80,7 +82,9 @@ header nav div div ul {
 }
 .footer .footer__div .footer__div__links {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  text-align: none;
   margin: 5% 20px;
 }
 .footer .footer__div .footer__div__links .footer__div__links__a {
@@ -128,6 +132,7 @@ header nav div div ul {
 .body-index .main-index {
   grid-area: main;
   display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -519,8 +524,9 @@ header nav div div ul {
   height: 250px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: none;
   font-family: "Bebas Neue";
   letter-spacing: 5px;
   font-size: 100px;
@@ -563,8 +569,8 @@ header nav div div ul {
 }
 .body-contact main .contact-container .cards {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
   text-align: center;
   width: 90%;
   background-color: #212433;
@@ -647,8 +653,8 @@ header nav div div ul {
 .body-contact .contact-form {
   grid-area: contact-form;
   display: flex;
-  justify-content: center;
   align-items: start;
+  justify-content: center;
   text-align: left;
   height: 100%;
   width: 100%;
@@ -666,7 +672,9 @@ header nav div div ul {
 .body-contact .contact-form .contact-form__div .contact-form__logo {
   grid-area: contact-form__logo;
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: none;
   height: 100%;
 }
 .body-contact .contact-form .contact-form__div .contact-form__logo img {
@@ -695,8 +703,9 @@ header nav div div ul {
 .body-contact .contact-form .contact-form__div form .but {
   grid-area: but;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: none;
 }
 .body-contact .contact-form .contact-form__div form .but .btn {
   background-color: #F13639;

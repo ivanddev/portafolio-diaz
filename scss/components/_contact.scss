@@ -13,9 +13,7 @@
         h1{
             height: 250px;
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display(flex, center, center, none);
             font-family: 'Bebas Neue';
             letter-spacing: 5px;
             font-size: 100px;
@@ -53,10 +51,7 @@
                 grid-area: card4;
             }
             .cards{
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                text-align: center;
+                @include display (flex, flex-start, center, center);
                 width: 90%;
                 background-color: nth($color, 3);
                 border-radius: 50%;
@@ -125,10 +120,7 @@
     }
     .contact-form{
         grid-area: contact-form;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        text-align: left;
+        @include display(flex, start, center, left);
         height: 100%;
         width: 100%;
         .contact-form__div{
@@ -144,8 +136,7 @@
             background-color: nth($color, 3);
             .contact-form__logo{
                 grid-area: contact-form__logo;
-                display: flex;
-                justify-content: center;
+                @include display(flex, center,center, none);
                 height: 100%;
                 img{
                     height: 80%;
@@ -180,9 +171,7 @@
                 
                 .but {
                     grid-area: but;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include display(flex, center, center, none);
                     .btn{
                         background-color: map-get($btn, bg-btn);
                         border: map-get($btn, border);

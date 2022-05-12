@@ -9,8 +9,7 @@
         width: 500px;
         .footer__div__container{
             margin: 0 60px;
-            display: flex;
-            justify-content: space-around;
+            @include display(flex,center ,space-around, none);
             a{
                 img{
                     height: 35px;
@@ -26,8 +25,7 @@
             }
         }
         .footer__div__links{
-            display: flex;
-            justify-content: space-around;
+            @include display(flex,center ,space-around, none);
             margin: 5% 20px;
             .footer__div__links__a{
                 color: nth($color, 1);

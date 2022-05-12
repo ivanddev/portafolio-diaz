@@ -11,9 +11,7 @@
     height: 100%;
     .main-index{
         grid-area: main;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @include display(flex, center, center, center);
         .main-index__items{
             color: nth($color, 5);
             margin-top: 15vh;
