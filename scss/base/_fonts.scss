@@ -1,8 +1,10 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url(../src/fonts/BebasNeue-Regular.ttf);
+    src: url(../src/fonts/BebasNeue-Regular.ttf) format('');
+    font-display: swap;
 }
 @font-face {
     font-family: 'M PLUS 1 Code';
-    src: url(../src/fonts/MPLUS1Code-VariableFont_wght.ttf);
+    src: url(../src/fonts/MPLUS1Code-VariableFont_wght.ttf) format('');
+    font-display: swap;
 }

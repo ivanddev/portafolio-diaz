@@ -14,7 +14,6 @@
         @include display(flex, center, center, center);
         .main-index__items{
             color: nth($color, 5);
-            margin-top: 15vh;
             .main-index__title1{
                 font-size: 23rem;
                 height: 23rem;

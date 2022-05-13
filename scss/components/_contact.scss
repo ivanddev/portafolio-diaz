@@ -29,9 +29,8 @@
             }
         }
         .contact-container{
-            display: grid;
+            @extend %grid-alignc;
             justify-items: center;
-            align-items: center;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 500px;
             grid-template-areas:

@@ -13,11 +13,10 @@
         margin: 0 auto;
         justify-items: center;
         .portfolio-coverscontainer{
-            display: grid;
+            @extend %grid-alignc;
             grid-template-rows: 15vh 1fr;
             margin: 10vh 0 0 0;
             width: 80%;
-            align-items: center;
             justify-items: center;
             gap: 2vh 0;
             .portfolio-coverscontainer__title{
@@ -53,11 +52,10 @@
             }
         
         .portfolio-bannerscontainer{
-            display: grid;
+            @extend %grid-alignc;
             grid-template-rows: 15vh repeat(5, 19vh);
             width: 80%;
             margin: 10vh 0;
-            align-items: center;
             background-color: nth($color, 3);
             justify-items: center;
             gap: 2vh 0;
