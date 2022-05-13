@@ -321,14 +321,39 @@ header nav div div ul {
 }
 .body-portfolio .main-portfolio {
   grid-area: portfolio;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   justify-items: center;
+}
+.body-portfolio .main-portfolio h1 {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: none;
+  font-family: "Bebas Neue";
+  letter-spacing: 5px;
+  font-size: 100px;
+  text-shadow: 5px 5px #000;
+  color: #C5C5C5;
+  background-color: #212433;
+}
+@media screen and (max-width: 500px) {
+  .body-portfolio .main-portfolio h1 {
+    height: 200px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 960px) {
+  .body-portfolio .main-portfolio h1 {
+    font-size: 3rem;
+  }
 }
 .body-portfolio .main-portfolio .portfolio-coverscontainer {
   grid-template-rows: 15vh 1fr;
   margin: 10vh 0 0 0;
-  width: 80%;
+  width: 60%;
   justify-items: center;
   gap: 2vh 0;
 }
@@ -346,6 +371,12 @@ header nav div div ul {
   .body-portfolio .main-portfolio .portfolio-coverscontainer {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 960px) {
+  .body-portfolio .main-portfolio .portfolio-coverscontainer {
+    width: 90%;
+    gap: 0;
   }
 }
 .body-portfolio .main-portfolio .img-containers {
@@ -370,7 +401,7 @@ header nav div div ul {
 }
 .body-portfolio .main-portfolio .portfolio-bannerscontainer {
   grid-template-rows: 15vh repeat(5, 19vh);
-  width: 80%;
+  width: 60%;
   margin: 10vh 0;
   background-color: #212433;
   justify-items: center;
@@ -396,11 +427,6 @@ header nav div div ul {
 @media screen and (orientation: landscape) and (max-width: 920px) {
   .body-portfolio .main-portfolio .portfolio-bannerscontainer {
     grid-template-rows: 110px repeat(5, 100px);
-  }
-}
-@media screen and (max-width: 960px) {
-  .body-portfolio .main-portfolio {
-    width: 100%;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 920px) {
