@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+*::selection{
+    background-color: #929292;
+    color: nth($color, 1);
+    text-shadow: none;
+}
 .p1 {
     font-size: calc(0.6rem + .6vw);
 }

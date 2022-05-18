@@ -1,11 +1,11 @@
-@import 'base/general-style';
-@import 'base/fonts';
-@import 'base/variables';
 @import 'base/lists';
-@import 'base/mediaquery';
+@import 'base/variables';
 @import 'base/maps';
 @import 'base/extends';
 @import 'base/mixin';
+@import 'base/general-style';
+@import 'base/fonts';
+@import 'base/mediaquery';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/index';

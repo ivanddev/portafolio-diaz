@@ -1,6 +1,17 @@
+.body-contact main .contact-container, .body-portfolio .main-portfolio .portfolio-bannerscontainer, .body-portfolio .main-portfolio .portfolio-coverscontainer {
+  display: grid;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+*::selection {
+  background-color: #929292;
+  color: #000;
+  text-shadow: none;
 }
 
 .p1 {
@@ -25,11 +36,6 @@
   src: url(../src/fonts/MPLUS1Code-VariableFont_wght.ttf) format("");
   font-display: swap;
 }
-.body-contact main .contact-container, .body-portfolio .main-portfolio .portfolio-bannerscontainer, .body-portfolio .main-portfolio .portfolio-coverscontainer {
-  display: grid;
-  align-items: center;
-}
-
 header {
   grid-area: header;
 }
@@ -275,7 +281,7 @@ header nav div div ul {
   background-color: #212433;
   box-shadow: 15px 0 10px #000;
 }
-.body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h2 {
+.body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h1 {
   margin: 20px 0;
   font-family: "Bebas Neue", cursive;
   color: #C5C5C5;
@@ -283,12 +289,12 @@ header nav div div ul {
   text-shadow: 5px 5px #000;
 }
 @media screen and (max-width: 500px) {
-  .body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h2 {
+  .body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h1 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 960px) {
-  .body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h2 {
+  .body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h1 {
     font-size: 2.5rem;
   }
 }
