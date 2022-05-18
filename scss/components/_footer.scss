@@ -5,8 +5,7 @@
     line-height: 1;
     width: 100%;
     .footer__div{
-        height: 90%;
-        width: 500px;
+        width: 550px;
         .footer__div__container{
             margin: 0 60px;
             @include display(flex,center ,space-around, none);
@@ -49,11 +48,11 @@
         @media screen and (max-width: $mobile-s) {
             width: 250px;
         }
-        @media screen and (max-width: $mobile) {
+        @media screen and (min-width: $mobile-s) and (max-width: $mobile) {
             width: 300px;
         }
-        @media screen and (max-width: $tablet) {
-            width: 80%;
+        @media screen and (min-width: $mobile) and (max-width: $tablet) {
+            width: 500px;
         }
     }
 }

@@ -1,7 +1,7 @@
 // index
 .body-index{
     display: grid;
-    grid-template-rows: auto calc(100vh - 4rem) 15vh;
+    grid-template-rows: auto calc(100vh - 4rem) 150px;
     grid-template-areas:
         "header"
         "main"
@@ -75,6 +75,9 @@
                 }
             }
         }
+    }
+    @media screen and (max-width: $mobile){
+        grid-template-rows: auto calc(100vh - 4rem) 120px;
     }
     @media screen and (orientation: landscape) and (max-width: $landscape){
         grid-template-rows: auto 600px 150px;

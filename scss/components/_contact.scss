@@ -2,7 +2,7 @@
 .body-contact{
     background-color: nth($color, 2);
     display: grid;
-    grid-template-rows: auto 800px 650px 15vh;
+    grid-template-rows: auto 800px 650px 150px;
     grid-template-areas:
         "header"
         "main-contact"
@@ -204,18 +204,18 @@
                     }
                 }
             }
+            @media screen and (max-width:$mobile-s){
+                width: 250px;
+                height: 450px;
+            }
+            @media screen and (min-width: $mobile-s) and (max-width:$mobile){
+                width: 300px;
+                height: 450px;
+            }
             @media screen and (min-width:$mobile) and (max-width: $tablet){
                 width: 400px;
                 height: 500px;
                 padding: 40px 40px 0 40px;
-            }
-            @media screen and (max-width:$mobile){
-                width: 300px;
-                height: 450px;
-            }
-            @media screen and (max-width:$mobile-s){
-                width: 250px;
-                height: 450px;
             }
         }
     }

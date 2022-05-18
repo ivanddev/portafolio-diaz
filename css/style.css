@@ -74,8 +74,7 @@ header nav div div ul {
   width: 100%;
 }
 .footer .footer__div {
-  height: 90%;
-  width: 500px;
+  width: 550px;
 }
 .footer .footer__div .footer__div__container {
   margin: 0 60px;
@@ -127,20 +126,20 @@ header nav div div ul {
     width: 250px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 299px) and (max-width: 500px) {
   .footer .footer__div {
     width: 300px;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .footer .footer__div {
-    width: 80%;
+    width: 500px;
   }
 }
 
 .body-index {
   display: grid;
-  grid-template-rows: auto calc(100vh - 4rem) 15vh;
+  grid-template-rows: auto calc(100vh - 4rem) 150px;
   grid-template-areas: "header" "main" "footer";
   background-size: cover;
   background-attachment: fixed;
@@ -174,7 +173,7 @@ header nav div div ul {
     height: 11rem;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-index .main-index .main-index__items .main-index__title1 {
     font-size: 15rem;
     height: 15rem;
@@ -199,7 +198,7 @@ header nav div div ul {
     letter-spacing: normal;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-index .main-index .main-index__items .main-index__title2 {
     text-align: center;
   }
@@ -228,6 +227,11 @@ header nav div div ul {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 500px) {
+  .body-index {
+    grid-template-rows: auto calc(100vh - 4rem) 120px;
+  }
+}
 @media screen and (orientation: landscape) and (max-width: 920px) {
   .body-index {
     grid-template-rows: auto 600px 150px;
@@ -238,7 +242,7 @@ header nav div div ul {
   background-color: #161622;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto calc(100vh - 4rem) 15vh;
+  grid-template-rows: auto calc(100vh - 4rem) 150px;
   grid-template-areas: "header header header" "aboutmeavatar aboutmetxt aboutmetxt" "footer footer footer";
 }
 .body-aboutme .aboutme__avatar {
@@ -263,7 +267,7 @@ header nav div div ul {
     height: 70%;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-aboutme .aboutme__avatar .aboutme__container__avatar .aboutme__container__avatar__img {
     height: 30%;
   }
@@ -293,7 +297,7 @@ header nav div div ul {
     font-size: 3rem;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-aboutme .aboutme__text .aboutme__container__text .aboutme__container__text__h1 {
     font-size: 2.5rem;
   }
@@ -312,7 +316,7 @@ header nav div div ul {
 @media screen and (max-width: 500px) {
   .body-aboutme {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 30vh calc(70vh - 4rem) 15vh;
+    grid-template-rows: auto 30vh calc(70vh - 4rem) 120px;
     grid-template-areas: "header" "aboutmeavatar" "aboutmetxt" "footer";
   }
 }
@@ -325,7 +329,7 @@ header nav div div ul {
 .body-portfolio {
   background-color: #161622;
   display: grid;
-  grid-template-rows: auto auto 15vh;
+  grid-template-rows: auto auto 150px;
   grid-template-areas: "header" "portfolio" "footer";
 }
 .body-portfolio .main-portfolio {
@@ -354,7 +358,7 @@ header nav div div ul {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-portfolio .main-portfolio h1 {
     font-size: 3rem;
   }
@@ -371,7 +375,7 @@ header nav div div ul {
     margin: 10% 0 10% 0;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-portfolio .main-portfolio .portfolio-coverscontainer .portfolio-coverscontainer__title {
     margin: 6% 0 6% 0;
   }
@@ -382,7 +386,7 @@ header nav div div ul {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1060px) {
   .body-portfolio .main-portfolio .portfolio-coverscontainer {
     width: 90%;
     gap: 0;
@@ -427,10 +431,16 @@ header nav div div ul {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 500px) {
   .body-portfolio .main-portfolio .portfolio-bannerscontainer {
     width: 90%;
     grid-template-rows: 10vh repeat(5, 7vh);
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1060px) {
+  .body-portfolio .main-portfolio .portfolio-bannerscontainer {
+    width: 90%;
+    grid-template-rows: 10vh repeat(5, 17vh);
   }
 }
 @media screen and (orientation: landscape) and (max-width: 920px) {
@@ -438,9 +448,14 @@ header nav div div ul {
     grid-template-rows: 110px repeat(5, 100px);
   }
 }
+@media screen and (max-width: 500px) {
+  .body-portfolio {
+    grid-template-rows: auto auto 120px;
+  }
+}
 @media screen and (orientation: landscape) and (max-width: 920px) {
   .body-portfolio {
-    grid-template-rows: auto 1200px 150px;
+    grid-template-rows: auto 1400px 150px;
   }
 }
 
@@ -457,7 +472,7 @@ header nav div div ul {
   background-color: #161622;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto calc(100vh - 4rem) 15vh;
+  grid-template-rows: auto calc(100vh - 4rem) 150px;
   grid-template-areas: "header header header" "clienttitle clientp clientp" "footer footer footer";
 }
 .body-client .client-container__titles {
@@ -475,7 +490,7 @@ header nav div div ul {
   font-size: 6rem;
   letter-spacing: 10px;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1060px) {
   .body-client .client-container__titles .client-container__title div h1 {
     font-size: 3rem;
   }
@@ -484,7 +499,7 @@ header nav div div ul {
   font-family: "Bebas Neue", cursive;
   font-size: 15rem;
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-client .client-container__titles .client-container__title div b {
     font-size: 9rem;
   }
@@ -504,7 +519,7 @@ header nav div div ul {
   box-shadow: 0px 0px 5px #000;
   filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(300%);
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1060px) {
   .body-client .client-container__text div img {
     height: 20px;
   }
@@ -520,7 +535,7 @@ header nav div div ul {
     grid-area: paragraph;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-client .client-container__text div p {
     width: 80%;
     margin: 0 auto;
@@ -538,7 +553,7 @@ header nav div div ul {
 @media screen and (max-width: 500px) {
   .body-client {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 55vh 15vh;
+    grid-template-rows: auto auto 55vh 120px;
     grid-template-areas: "header" "clienttitle" "clientp" "footer";
   }
 }
@@ -551,7 +566,7 @@ header nav div div ul {
 .body-contact {
   background-color: #161622;
   display: grid;
-  grid-template-rows: auto 800px 650px 15vh;
+  grid-template-rows: auto 800px 650px 150px;
   grid-template-areas: "header" "main-contact" "contact-form" "footer";
 }
 .body-contact main {
@@ -577,7 +592,7 @@ header nav div div ul {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-contact main h1 {
     font-size: 3rem;
   }
@@ -635,7 +650,7 @@ header nav div div ul {
   font-family: "Bebas Neue";
   letter-spacing: 3px;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1060px) {
   .body-contact main .contact-container .cards article div {
     padding: 0 10px;
     font-size: 10px;
@@ -646,7 +661,7 @@ header nav div div ul {
     height: 10vh;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-contact main .contact-container .cards article {
     height: 120px;
   }
@@ -663,7 +678,7 @@ header nav div div ul {
     width: 130px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-contact main .contact-container .cards {
     height: 200px;
     width: 200px;
@@ -677,7 +692,7 @@ header nav div div ul {
     grid-template-areas: "card1 card2" "card3 card4";
   }
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-contact main .contact-container {
     width: 90%;
     grid-template-columns: 1fr 1fr;
@@ -773,23 +788,23 @@ header nav div div ul {
   background-color: #C5C5C5;
   border: none;
 }
-@media screen and (min-width: 500px) and (max-width: 960px) {
+@media screen and (max-width: 299px) {
   .body-contact .contact-form .contact-form__div {
-    width: 400px;
-    height: 500px;
-    padding: 40px 40px 0 40px;
+    width: 250px;
+    height: 450px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 299px) and (max-width: 500px) {
   .body-contact .contact-form .contact-form__div {
     width: 300px;
     height: 450px;
   }
 }
-@media screen and (max-width: 299px) {
+@media screen and (min-width: 500px) and (max-width: 1060px) {
   .body-contact .contact-form .contact-form__div {
-    width: 250px;
-    height: 450px;
+    width: 400px;
+    height: 500px;
+    padding: 40px 40px 0 40px;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 920px) {

@@ -3,7 +3,7 @@
     background-color: nth($color, 2);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto calc(100vh - 4rem) 15vh;
+    grid-template-rows: auto calc(100vh - 4rem) 150px;
     grid-template-areas:
         "header header header"
         "clienttitle clientp clientp"
@@ -78,7 +78,7 @@
     }
     @media screen and (max-width:$mobile){
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 55vh 15vh;
+        grid-template-rows: auto auto 55vh 120px;
         grid-template-areas:
             "header"
             "clienttitle"

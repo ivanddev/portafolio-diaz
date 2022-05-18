@@ -2,7 +2,7 @@
 .body-portfolio{
     background-color: nth($color, 2);
     display: grid;
-    grid-template-rows: auto auto 15vh;
+    grid-template-rows: auto auto 150px;
     grid-template-areas:
     "header"
     "portfolio"
@@ -93,17 +93,24 @@
                     height: 100%;
                 }
             }
-            @media screen and (max-width:$tablet){
+            @media screen and (max-width:$mobile){
                 width: 90%;
                 grid-template-rows: 10vh repeat(5, 7vh);
+            }
+            @media screen and (min-width:$mobile) and (max-width:$tablet){
+                width: 90%;
+                grid-template-rows: 10vh repeat(5, 17vh);
             }
             @media screen and (orientation:landscape) and (max-width:$landscape){
                 grid-template-rows: 110px repeat(5, 100px);
             }
         }
     }
+    @media screen and (max-width:$mobile){
+        grid-template-rows: auto auto 120px;
+    }
     @media screen and (orientation:landscape) and (max-width:$landscape){
-        grid-template-rows: auto 1200px 150px;
+        grid-template-rows: auto 1400px 150px;
     }
 }
 
