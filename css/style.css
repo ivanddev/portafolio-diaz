@@ -11,6 +11,10 @@
   font-size: calc(0.4rem + 0.5vw);
 }
 
+.disclaimer {
+  display: none;
+}
+
 @font-face {
   font-family: "Bebas Neue";
   src: url(../src/fonts/BebasNeue-Regular.ttf) format("");
