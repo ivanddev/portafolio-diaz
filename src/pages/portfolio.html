@@ -28,6 +28,8 @@
     <link rel="shortcut icon" href="../multimedia/images/ico/zierk-logo.ico" type="image/x-icon">
     <!-- link animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- link animate aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="body-portfolio">
@@ -98,19 +100,19 @@
         </section>
         <section class="portfolio-bannerscontainer img-containers animate__animated animate__fadeInUp">
             <h2 class="portfolio-bannerscontainer-title img-containers-titles text-center h3">BANNERS</h2>
-            <article class="portfolio-bannerscontainer__article"><img class="portfolio-bannerscontainer__img imghover"
+            <article class="portfolio-bannerscontainer__article"><img data-aos="fade-up" class="portfolio-bannerscontainer__img imghover"
                     src="../multimedia/images/beretbanner.jpg" alt="Beret banner">
             </article>
-            <article class="portfolio-bannerscontainer__article"><img class="portfolio-bannerscontainer__img imghover"
+            <article class="portfolio-bannerscontainer__article"><img data-aos="fade-up" class="portfolio-bannerscontainer__img imghover"
                     src="../multimedia/images/fronticbanner.jpg" alt="Frontic banner">
             </article>
-            <article class="portfolio-bannerscontainer__article"><img class="portfolio-bannerscontainer__img imghover"
+            <article class="portfolio-bannerscontainer__article"><img data-aos="fade-up" class="portfolio-bannerscontainer__img imghover"
                     src="../multimedia/images/furiusbanner.jpg" alt="Furius banner">
             </article>
-            <article class="portfolio-bannerscontainer__article"><img class="portfolio-bannerscontainer__img imghover"
+            <article class="portfolio-bannerscontainer__article"><img data-aos="fade-up" class="portfolio-bannerscontainer__img imghover"
                     src="../multimedia/images/kratzbanner.jpg" alt="Kratz banner">
             </article>
-            <article class="portfolio-bannerscontainer__article"><img class="portfolio-bannerscontainer__img imghover"
+            <article class="portfolio-bannerscontainer__article"><img data-aos="fade-up" class="portfolio-bannerscontainer__img imghover"
                     src="../multimedia/images/coscubanner.jpg" alt="Coscu banner">
             </article>
         </section>
@@ -140,6 +142,11 @@
             </div>
         </div>
     </footer>
+    <!-- link animate aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <!-- link bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
