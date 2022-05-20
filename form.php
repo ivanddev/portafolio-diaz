@@ -5,6 +5,8 @@ $lastname = $_POST['lastname'];
 $email = $_POST['email'];
 $commentary = $_POST['commentary'];
 
+$header .= "Content-Type: text/plain";
+
 $commentary = "Este mensaje fue enviado por " . $firstname . ",\r\n";
 $commentary .= "Su e-mail es: " . $email . " \r\n";
 $commentary .= "Mensaje: " . $_POST['commentary'] . " \r\n";
