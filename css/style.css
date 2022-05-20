@@ -750,6 +750,9 @@ header nav div div ul {
 .body-contact .contact-form .contact-form__div form .com {
   grid-area: com;
 }
+.body-contact .contact-form .contact-form__div form .com textarea {
+  resize: none;
+}
 .body-contact .contact-form .contact-form__div form .but {
   grid-area: but;
   display: flex;

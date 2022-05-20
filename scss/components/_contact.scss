@@ -166,6 +166,9 @@
                 
                 .com {
                     grid-area: com;
+                    textarea{
+                        resize: none;
+                    }
                 }
                 
                 .but {
