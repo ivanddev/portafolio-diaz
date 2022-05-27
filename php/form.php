@@ -16,6 +16,6 @@ $from = 'Este email fue enviado desde la web Zierk Portfolio';
 
 mail($destination, $from, utf8_decode($commentary), $header);
 
-header('Location:success.html');
+header('Location:../success.html');
 
 ?>
